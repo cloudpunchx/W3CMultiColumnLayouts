@@ -24,15 +24,34 @@ p{
 
 #posts{
     display: grid;
-    column-gap: 10px;
-    row-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    grid-auto-columns: 40vh;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
 }
 
-.wendy{
-    background-color: rgb(228, 143, 143);
-    display: grid;
-    border: 2px solid black;
+#posts > article{
+    height: 75vh;
     margin: 5px;
     justify-items: center;
+    border: 2px solid black;
+}
+
+#one{
+    background-color: rgb(228, 143, 143);
+    display: grid;
+}
+
+#two{
+    background-color: rgb(160, 88, 29);
+    display: grid;
+}
+
+#three{
+    background-color: rgb(231, 228, 47);
+    display: grid;
+}
+
+#four{
+    background-color: rgb(35, 37, 153);
+    display: grid;
 }
