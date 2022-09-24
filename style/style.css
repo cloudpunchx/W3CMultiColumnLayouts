@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: lightpink;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+img{
+    width: 350px;
+    padding-top: 10px;
+}
+
+p{
+    margin: 10%;
+    text-align: center;
+}
+
+.quote{
+    font-style: italic;
+}
+
+#posts{
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.wendy{
+    background-color: rgb(228, 143, 143);
+    display: grid;
+    border: 2px solid black;
+    margin: 5px;
+    justify-items: center;
+}
